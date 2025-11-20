@@ -1,5 +1,4 @@
 # Qualité Logicielle
-
 Ce projet est dédié à la mise en place et au suivi des bonnes pratiques de **qualité logicielle** dans le cadre du projet DigiCheese.  
 Il contient les ressources, scripts et pipelines nécessaires pour assurer la maintenabilité, la robustesse et la conformité du code.
 
@@ -14,17 +13,14 @@ Il contient les ressources, scripts et pipelines nécessaires pour assurer la ma
 ---
 
 ## Pipeline CI/CD
-
 Le pipeline est défini dans `.github/workflows/quality_pipeline.yml` et s’exécute automatiquement sur chaque **push** dans la branche `main`.
 
 ### Badge de statut
-
 ![QualityPipeline](https://github.com/PhilippeVita/Qualite_Logicielle/actions/workflows/quality_pipeline.yml/badge.svg)
 
 ---
 
 ## Structure du projet
-
 Qualite_Logicielle/ 
 ```
 │ 
@@ -36,7 +32,6 @@ Qualite_Logicielle/
 
 
 ## Exécution locale
-
 Pour tester localement :
 
 ```bash
