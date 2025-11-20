@@ -26,11 +26,13 @@ Le pipeline est défini dans `.github/workflows/quality_pipeline.yml` et s’ex�
 ## Structure du projet
 
 Qualite_Logicielle/ 
+```
 │ 
 ├── app/ # Code applicatif 
 ├── tests/ # Tests unitaires 
 ├── documentation/ # Ressources et fiches techniques 
 └── .github/workflows/ # Pipelines CI/CD
+```
 
 
 ## Exécution locale
@@ -43,7 +45,7 @@ python -m venv .venv
 pip install -r requirements.txt
 pytest
 flake8 app.py
-
+```
 
 ## Résultat attendu
 - Le badge GitHub Actions affichera en temps réel l’état du pipeline.  
