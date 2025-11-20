@@ -1,0 +1,17 @@
+{
+    "tested_endpoints": [
+        "GET /",
+        "POST /api/v1/client/",
+        "GET /api/v1/client/{client_id}",
+        "PATCH /api/v1/client/{client_id}",
+        "DELETE /api/v1/client/{client_id}"
+    ],
+    "critical_repository_functions_tested": [
+        "get_all_clients",
+        "get_client_by_id",
+        "create_client",
+        "patch_client",
+        "delete_client"
+    ],
+    "status": "all critical functions covered"
+}

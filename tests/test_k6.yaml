@@ -1,0 +1,318 @@
+- data:
+    contains: default
+    name: http_reqs
+    submetrics: null
+    thresholds: []
+    type: counter
+  metric: http_reqs
+  type: Metric
+- data:
+    tags:
+      expected_response: 'true'
+      group: ''
+      method: GET
+      name: http://127.0.0.1:8000/openapi.json
+      proto: HTTP/1.1
+      scenario: default
+      status: '200'
+      url: http://127.0.0.1:8000/openapi.json
+    time: '2025-11-19T13:04:42.6903833+01:00'
+    value: 1
+  metric: http_reqs
+  type: Point
+- data:
+    contains: time
+    name: http_req_duration
+    submetrics:
+    - name: http_req_duration{expected_response:true}
+      suffix: expected_response:true
+      tags:
+        expected_response: 'true'
+    thresholds: []
+    type: trend
+  metric: http_req_duration
+  type: Metric
+- data:
+    tags:
+      expected_response: 'true'
+      group: ''
+      method: GET
+      name: http://127.0.0.1:8000/openapi.json
+      proto: HTTP/1.1
+      scenario: default
+      status: '200'
+      url: http://127.0.0.1:8000/openapi.json
+    time: '2025-11-19T13:04:42.6903833+01:00'
+    value: 16.8327
+  metric: http_req_duration
+  type: Point
+- data:
+    contains: time
+    name: http_req_blocked
+    submetrics: null
+    thresholds: []
+    type: trend
+  metric: http_req_blocked
+  type: Metric
+- data:
+    tags:
+      expected_response: 'true'
+      group: ''
+      method: GET
+      name: http://127.0.0.1:8000/openapi.json
+      proto: HTTP/1.1
+      scenario: default
+      status: '200'
+      url: http://127.0.0.1:8000/openapi.json
+    time: '2025-11-19T13:04:42.6903833+01:00'
+    value: 1.5088
+  metric: http_req_blocked
+  type: Point
+- data:
+    contains: time
+    name: http_req_connecting
+    submetrics: null
+    thresholds: []
+    type: trend
+  metric: http_req_connecting
+  type: Metric
+- data:
+    tags:
+      expected_response: 'true'
+      group: ''
+      method: GET
+      name: http://127.0.0.1:8000/openapi.json
+      proto: HTTP/1.1
+      scenario: default
+      status: '200'
+      url: http://127.0.0.1:8000/openapi.json
+    time: '2025-11-19T13:04:42.6903833+01:00'
+    value: 1.5088
+  metric: http_req_connecting
+  type: Point
+- data:
+    contains: time
+    name: http_req_tls_handshaking
+    submetrics: null
+    thresholds: []
+    type: trend
+  metric: http_req_tls_handshaking
+  type: Metric
+- data:
+    tags:
+      expected_response: 'true'
+      group: ''
+      method: GET
+      name: http://127.0.0.1:8000/openapi.json
+      proto: HTTP/1.1
+      scenario: default
+      status: '200'
+      url: http://127.0.0.1:8000/openapi.json
+    time: '2025-11-19T13:04:42.6903833+01:00'
+    value: 0
+  metric: http_req_tls_handshaking
+  type: Point
+- data:
+    contains: time
+    name: http_req_sending
+    submetrics: null
+    thresholds: []
+    type: trend
+  metric: http_req_sending
+  type: Metric
+- data:
+    tags:
+      expected_response: 'true'
+      group: ''
+      method: GET
+      name: http://127.0.0.1:8000/openapi.json
+      proto: HTTP/1.1
+      scenario: default
+      status: '200'
+      url: http://127.0.0.1:8000/openapi.json
+    time: '2025-11-19T13:04:42.6903833+01:00'
+    value: 0
+  metric: http_req_sending
+  type: Point
+- data:
+    contains: time
+    name: http_req_waiting
+    submetrics: null
+    thresholds: []
+    type: trend
+  metric: http_req_waiting
+  type: Metric
+- data:
+    tags:
+      expected_response: 'true'
+      group: ''
+      method: GET
+      name: http://127.0.0.1:8000/openapi.json
+      proto: HTTP/1.1
+      scenario: default
+      status: '200'
+      url: http://127.0.0.1:8000/openapi.json
+    time: '2025-11-19T13:04:42.6903833+01:00'
+    value: 16.8327
+  metric: http_req_waiting
+  type: Point
+- data:
+    contains: time
+    name: http_req_receiving
+    submetrics: null
+    thresholds: []
+    type: trend
+  metric: http_req_receiving
+  type: Metric
+- data:
+    tags:
+      expected_response: 'true'
+      group: ''
+      method: GET
+      name: http://127.0.0.1:8000/openapi.json
+      proto: HTTP/1.1
+      scenario: default
+      status: '200'
+      url: http://127.0.0.1:8000/openapi.json
+    time: '2025-11-19T13:04:42.6903833+01:00'
+    value: 0
+  metric: http_req_receiving
+  type: Point
+- data:
+    contains: default
+    name: http_req_failed
+    submetrics: null
+    thresholds: []
+    type: rate
+  metric: http_req_failed
+  type: Metric
+- data:
+    tags:
+      expected_response: 'true'
+      group: ''
+      method: GET
+      name: http://127.0.0.1:8000/openapi.json
+      proto: HTTP/1.1
+      scenario: default
+      status: '200'
+      url: http://127.0.0.1:8000/openapi.json
+    time: '2025-11-19T13:04:42.6903833+01:00'
+    value: 0
+  metric: http_req_failed
+  type: Point
+- data:
+    contains: default
+    name: vus
+    submetrics: null
+    thresholds: []
+    type: gauge
+  metric: vus
+  type: Metric
+- data:
+    tags: {}
+    time: '2025-11-19T13:04:43.6714153+01:00'
+    value: 1
+  metric: vus
+  type: Point
+- data:
+    contains: default
+    name: vus_max
+    submetrics: null
+    thresholds: []
+    type: gauge
+  metric: vus_max
+  type: Metric
+- data:
+    tags: {}
+    time: '2025-11-19T13:04:43.6714153+01:00'
+    value: 1
+  metric: vus_max
+  type: Point
+- data:
+    tags: {}
+    time: '2025-11-19T13:04:44.6714221+01:00'
+    value: 1
+  metric: vus
+  type: Point
+- data:
+    tags: {}
+    time: '2025-11-19T13:04:44.6714221+01:00'
+    value: 1
+  metric: vus_max
+  type: Point
+- data:
+    tags: {}
+    time: '2025-11-19T13:04:45.6711348+01:00'
+    value: 1
+  metric: vus
+  type: Point
+- data:
+    tags: {}
+    time: '2025-11-19T13:04:45.6711348+01:00'
+    value: 1
+  metric: vus_max
+  type: Point
+- data:
+    contains: data
+    name: data_sent
+    submetrics: null
+    thresholds: []
+    type: counter
+  metric: data_sent
+  type: Metric
+- data:
+    tags:
+      group: ''
+      scenario: default
+    time: '2025-11-19T13:04:45.6908454+01:00'
+    value: 82
+  metric: data_sent
+  type: Point
+- data:
+    contains: data
+    name: data_received
+    submetrics: null
+    thresholds: []
+    type: counter
+  metric: data_received
+  type: Metric
+- data:
+    tags:
+      group: ''
+      scenario: default
+    time: '2025-11-19T13:04:45.6908454+01:00'
+    value: 5292
+  metric: data_received
+  type: Point
+- data:
+    contains: time
+    name: iteration_duration
+    submetrics: null
+    thresholds: []
+    type: trend
+  metric: iteration_duration
+  type: Metric
+- data:
+    tags:
+      group: ''
+      scenario: default
+    time: '2025-11-19T13:04:45.6908454+01:00'
+    value: 3019.8109
+  metric: iteration_duration
+  type: Point
+- data:
+    contains: default
+    name: iterations
+    submetrics: null
+    thresholds: []
+    type: counter
+  metric: iterations
+  type: Metric
+- data:
+    tags:
+      group: ''
+      scenario: default
+    time: '2025-11-19T13:04:45.6908454+01:00'
+    value: 1
+  metric: iterations
+  type: Point

@@ -1,0 +1,36 @@
+name: QualityPipeline
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Récupération du code
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Setup Python
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      # 3. Installer les dépendances
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install fastapi uvicorn sqlalchemy pydantic pytest flake8
+
+      # 4. Vérification du style de code
+      - name: Run linters
+        run: flake8 app.py
+
+      # 5. Exécution des tests unitaires
+      - name: Run tests
+        run: pytest --maxfail=1 --disable-warnings -q
